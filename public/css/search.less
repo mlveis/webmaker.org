@@ -81,6 +81,13 @@ span.icon-caret-down {
     font-weight: normal;
     padding-bottom: @gutter * @unit;
     font-size: 1.5em;
+    @media only screen and (max-width: 640px){
+    font-size: 0.5em;
+    display: block;
+    text-align:left;
+    line-height: 1;
+    margin-top: 0;
+    }
   }
   .giant-search,
   .search-btn,
@@ -99,6 +106,10 @@ span.icon-caret-down {
     background: none;
     color: inherit;
     cursor: pointer;
+    @media only screen and (max-width: 640px){
+    float:right;
+    font-size: 1em;
+    }
   }
   .search-filter {
     position: relative;
@@ -156,6 +167,10 @@ span.icon-caret-down {
       transition: background-color 0.3s ease;
       outline: none;
       background: lighten( @green, 5% );
+    }
+    @media only screen and (max-width: 640px){
+    text-align:left;
+    width:300px;
     }
   }
   .search-title {
@@ -316,9 +331,10 @@ span.icon-caret-down {
     font-size: 3.5em;
     display: block;
     line-height: 1;
-  
+    margin-top: 0;
     }
   }
 }
+
 
 

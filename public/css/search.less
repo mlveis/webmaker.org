@@ -18,9 +18,17 @@ span.icon-caret-down {
     background: @green;
     position: relative;
     font-size: 3em;
-    @media only screen and (max-width: 640px){
+    @media only screen 
+    and (min-width: 320px)
+    and (max-width: 640px){
     font-size: 1.5em;
     text-align:center;
+    }
+    @media only screen 
+    and (min-width: 768px)
+    and (max-width: 1024px){
+    font-size: 2em;
+    text-align:left;
     }
     color: #FFF;
     padding: 2em 0 2.6em 0;
@@ -69,7 +77,14 @@ span.icon-caret-down {
         padding-left: 1em;
         .border-box;
         .width( 3 );
-        @media only screen and (max-width: 640px){
+         @media only screen 
+         and (min-width: 320px)
+         and (max-width: 640px){
+        .width(1);
+        }
+         @media only screen 
+         and (min-width: 768px)
+         and (max-width: 1024px){
         .width(1);
         }
         &:focus {
@@ -88,8 +103,19 @@ span.icon-caret-down {
     font-weight: normal;
     padding-bottom: @gutter * @unit;
     font-size: 1.5em;
-    @media only screen and (max-width: 640px){
+    @media only screen 
+    and (min-width: 320px)
+    and (max-width: 640px){
     font-size: 1em;
+    display: block;
+    text-align:center;
+    line-height: 1;
+    margin-top: 0;
+    }
+    @media only screen 
+    and (min-width: 768px)
+    and (max-width: 1024px){
+    font-size: 2em;
     display: block;
     text-align:center;
     line-height: 1;
@@ -113,7 +139,15 @@ span.icon-caret-down {
     background: none;
     color: inherit;
     cursor: pointer;
-    @media only screen and (max-width: 640px){
+    @media only screen 
+    and (min-width: 320px) 
+    and (max-width: 640px){
+    float:right;
+    font-size: 1em;
+    }
+    @media only screen 
+    and (min-width: 768px) 
+    and (max-width: 1024px){
     float:right;
     font-size: 1em;
     }
@@ -175,9 +209,17 @@ span.icon-caret-down {
       outline: none;
       background: lighten( @green, 5% );
     }
-    @media only screen and (max-width: 640px){
+    @media only screen 
+    and (min-width: 320px)
+    and (max-width: 640px){
     text-align:left;
     width:140px;
+    }
+     @media only screen 
+    and (min-width: 768px)
+    and (max-width: 1024px){
+    text-align:left;
+    
     }
   }
   .search-title {

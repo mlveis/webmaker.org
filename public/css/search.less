@@ -103,14 +103,18 @@ span.icon-caret-down {
     font-weight: normal;
     padding-bottom: @gutter * @unit;
     font-size: 1.5em;
-    @media (max-width: @width-small){
+    @media only screen 
+    and (min-width: @width-small)
+    and (max-width: @width-medium){
     font-size: 1em;
     display: block;
     text-align:center;
     line-height: 1;
     margin-top: 0;
     }
-    @media (max-width: @width-medium){
+    @media only screen 
+    and (min-width: @width-medium)
+    and (max-width: @width-large){
     font-size: 2em;
     display: block;
     text-align:center;

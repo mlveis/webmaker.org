@@ -76,6 +76,12 @@ body#events.details {
 
             text-align: center;
 
+            @media only screen 
+            and (min-width: 320px)
+            and (max-width: 640px){
+            text-align:left;
+            }
+
             #registerLink {
                 @height:        50px;
                 background:     #3fb58e;
@@ -87,6 +93,7 @@ body#events.details {
                 color:          #fcfcfc;
                 font-size:      16px;
                 line-height:    @height;
+        
 
                 .icon-chevron-right {
                     position:   relative;
@@ -144,6 +151,7 @@ body#events.details {
             }
         }
     }
+
     form#edit-event {
         input {
             border: 1px solid #ccc;

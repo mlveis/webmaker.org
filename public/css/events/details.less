@@ -67,6 +67,11 @@ body#events.details {
         .gallery-sidebar {
             background: rgba(127, 127, 127, 0.25);
             margin:     05px 30px 10px 2px;
+            @media only screen 
+            and (min-width: 320px)
+            and (max-width: 640px){
+            margin-left: -30px;
+            }
             float:      left;
             z-index: 1;
             position: relative;
@@ -106,6 +111,13 @@ body#events.details {
                 color:          #fcfcfc;
                 font-size:      16px;
                 line-height:    @height;
+
+                @media only screen 
+                and (min-width: 320px)
+                and (max-width: 640px){
+                text-align:left;
+                margin-left: 100px;
+                }
         
 
                 .icon-chevron-right {
@@ -135,7 +147,7 @@ body#events.details {
                 and (max-width: 640px){
                 font-size:12px;
                 width:250px;
-                margin-left:-10px;
+                margin-left:80px;
                 }
             }
         }
@@ -152,6 +164,12 @@ body#events.details {
                 margin-top: 8px;
                 margin-left: 18px;
                 line-height: @profileImgSize;
+                @media only screen 
+                and (min-width: 320px)
+                and (max-width: 640px){
+                margin-left:10px;
+                width:200px;
+                }
                 
                 color:      #888;
 
@@ -174,6 +192,12 @@ body#events.details {
 
                     font-size:      14px;
                     vertical-align: top;
+                    @media only screen 
+                    and (min-width: 320px)
+                    and (max-width: 640px){
+                    padding-left:5px;
+                    width:500px;
+                    }
                 }
             }
         }

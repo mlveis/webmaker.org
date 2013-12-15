@@ -8,9 +8,29 @@ body#events.details {
         #event-title {
             display: inline-block;
 
+                @media only screen and (min-width: 320px) and (max-width: 640px) {
+                
+                }
+
             h1 {
                 margin-top:   6px;
                 margin-left:  4px;
+
+                @media only screen and (min-width: 320px) and (max-width: 640px) {
+
+                    font-size:2em;
+                    margin-top: 1px;
+                    margin-left: 50px;
+                
+                }
+
+                @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+                    font-size:3em;
+                    margin-top: 1px;
+                    margin-left: 50px;
+                
+                }
             }
         }
         #owner-panel {
@@ -55,6 +75,19 @@ body#events.details {
         .gallery-sidebar {
             background: rgba(127, 127, 127, 0.25);
             margin:     05px 30px 10px 2px;
+
+            @media only screen and (min-width: 320px) and (max-width: 640px) {
+
+                margin-left: -30px;
+            
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+                margin-left: -125px;
+            
+            }
+
             float:      left;
             z-index: 1;
             position: relative;
@@ -76,6 +109,14 @@ body#events.details {
 
             text-align: center;
 
+            @media only screen and (min-width: 320px) and (max-width: 640px) {
+
+                text-align:left;
+                margin-left: -50px;
+            
+            }
+            
+
             #registerLink {
                 @height:        50px;
                 background:     #3fb58e;
@@ -87,6 +128,14 @@ body#events.details {
                 color:          #fcfcfc;
                 font-size:      16px;
                 line-height:    @height;
+
+                @media only screen and (min-width: 320px) and (max-width: 640px) {
+                
+                    text-align:left;
+                    margin-left: 100px;
+                
+                }
+        
 
                 .icon-chevron-right {
                     position:   relative;
@@ -110,15 +159,31 @@ body#events.details {
                 font-size:  17px;
                 color:  #666;
                 line-height: 1.6;
+                
+                @media only screen and (min-width: 320px) and (max-width: 640px) {
+
+                    font-size:12px;
+                    width:250px;
+                    margin-left:80px;
+                
+                }
+               
             }
         }
         #event-description {
             padding:    15px;
 
+
             #description-body {
                 color:      #787878;
                 font-size:  15px;
                 line-height: 1.6;
+
+                @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+                    text-align:center;
+                
+                }
             }
             #event-organizer {
                 display:    inline-block;
@@ -126,12 +191,35 @@ body#events.details {
                 margin-left: 18px;
                 line-height: @profileImgSize;
 
+                @media only screen and (min-width: 320px) and (max-width: 640px) {
+
+                    margin-left:10px;
+                    width:200px;
+                    margin-top:10px;
+                }
+
+                @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+                    margin-top:-120px;
+                    margin-left:290px;
+                    width:800px;
+                
+                }
+                
                 color:      #888;
 
                 img {
                     height: @profileImgSize;
                     width:  @profileImgSize;
                     border-radius: @profileImgSize + 10px;
+
+                    @media only screen and (min-width: 320px) and (max-width: 640px) {
+
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
                 }
                 .organized-by {
                     .clickable;
@@ -140,10 +228,18 @@ body#events.details {
 
                     font-size:      14px;
                     vertical-align: top;
+
+                    @media only screen and (min-width: 320px) and (max-width: 640px) {
+
+                        padding-left:5px;
+                        width:500px;
+                    
+                    }
                 }
             }
         }
     }
+
     form#edit-event {
         input {
             border: 1px solid #ccc;

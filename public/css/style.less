@@ -1197,6 +1197,22 @@ img {
     padding: 30px 20px 0 20px;
     height: 725px;
     width: 320px;
+    @media only screen
+    and (min-width: @width-small)
+    and (max-width: @width-medium){
+    width: 400px;
+    }
+
+    @media only screen
+    and (min-width: @width-medium)
+    and (max-width: @width-large){
+
+    width:500px;
+
+    }
+
+
+
     .border-box;
 
     p {

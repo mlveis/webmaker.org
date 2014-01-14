@@ -1200,14 +1200,26 @@ img {
     @media only screen
     and (min-width: @width-small)
     and (max-width: @width-medium){
+    display: inline-block;
+    position: relative;
     width: 400px;
+    height: 700px;
+    padding: 60px 20px 0 20px;
+    margin-right: 20px;
+
     }
 
     @media only screen
     and (min-width: @width-medium)
     and (max-width: @width-large){
 
-    width:500px;
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 700px;
+    padding: 40px 20px 0px;
+    margin-right: 80px;
+    margin-top: 15px;
 
     }
 
@@ -1289,6 +1301,21 @@ img {
         .ui-btn {
           width: 205px;
           margin-top: 10px;
+          @media only screen
+          and (min-width: @width-small)
+          and (max-width: @width-medium){
+
+
+
+          }
+
+          @media only screen
+          and (min-width: @width-medium)
+          and (max-width: @width-large){
+
+          margin-top:3px;
+
+          }
         }
 
         .remix-btn {

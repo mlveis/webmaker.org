@@ -651,6 +651,24 @@ footer {
 
   .back-to-top {
     position: absolute;
+    @media only screen
+    and (min-width: @width-small)
+    and (max-width: @width-medium){
+
+    position: relative;
+    right:-120px;
+
+    }
+
+
+    @media only screen
+    and (min-width: @width-medium)
+    and (max-width: @width-large){
+
+    position:relative;
+    right:-350px;
+
+    }
     bottom: -6px;
     right: 30px;
     height: 0;

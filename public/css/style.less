@@ -1197,8 +1197,18 @@ img {
     padding: 30px 20px 0 20px;
     height: 725px;
     width: 320px;
+    @media (max-width: @width-small) {
+    display: inline-block;
+    position: relative;
+    width: 330px;
+    height: 700px;
+    padding: 60px 20px 0 20px;
+    margin-right: 20px;
+    margin-top:30px;
+    }
+
     @media only screen
-    and (min-width: @width-small)
+    and (min-width: 321px)
     and (max-width: @width-medium){
     display: inline-block;
     position: relative;
